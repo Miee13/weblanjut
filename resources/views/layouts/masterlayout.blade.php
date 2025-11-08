@@ -23,6 +23,12 @@
                     24010500001 - Fahmi Hidayat (GANJIL)
                 </span>
             </div>
+
+            <div class="navbar-nav mx-auto">
+                <span class="navbar-text">
+                    24010600010 - Veni Adelia (GENAP)
+                </span>
+            </div>
         </div>
     </nav>
 

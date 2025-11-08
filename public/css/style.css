@@ -1,165 +1,36 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-.card-img-fixed {
-=======
-/* Background Gradient untuk Home */
-.home-background {
-    background-image: url('/images/bckground.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh; /* atur tinggi sesuai kebutuhan */
+/* Reset styling yang berlebihan */
+.hero-section, .about-hero {
+    display: none;
+}
+
+/* Styling sederhana sesuai foto */
+.destination-image img {
+    height: 120px;
     width: 100%;
-=======
-/* Background Gradient untuk Home */
-.hero-section {
-    background-image: url('bckground.webp');
-    padding: 100px 0;
-    margin-bottom: 50px;
->>>>>>> d4cbec4fa6f00dc19c082bc91edc0ee670e048f4
-}
-
-.hero-content h1 {
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-/* Background untuk About */
-.about-hero {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    padding: 80px 0;
-    margin-bottom: 50px;
-}
-
-/* Styling untuk Destination Cards - Grid 3x3 */
-.destination-card {
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> d4cbec4fa6f00dc19c082bc91edc0ee670e048f4
-    height: 300px;
-}
-
-.destination-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-}
-
-.destination-img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    border-radius: 4px;
 }
 
-.destination-card:hover .destination-img {
-    transform: scale(1.1);
+.destination-item {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    transition: all 0.2s ease;
 }
 
-.destination-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
-    color: white;
-    padding: 20px;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
+.destination-item:hover {
+    border-color: #007bff;
 }
 
-.destination-card:hover .destination-info {
-    transform: translateY(0);
-}
-
-.destination-info h5 {
-    margin: 0;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.destination-info p {
-    margin: 5px 0 0 0;
-    opacity: 0.9;
-}
-
-/* Creator Info Styling */
-.creator-info {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-left: 5px solid #007bff;
-}
-
-.team-member {
-    background: #f8f9fa;
-    transition: background-color 0.3s ease;
-}
-
-.team-member:hover {
-    background: #e9ecef;
-}
-
-/* Navbar Styling */
-.navbar-nav .nav-link {
-    font-weight: 500;
-    margin-right: 20px;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link:hover {
-    background-color: rgba(255,255,255,0.1);
-}
-
-.navbar-text {
-    font-weight: 500;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 60px 0;
-    }
-    
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    
-    .destination-card {
-        height: 250px;
-    }
-    
-    .navbar-nav {
-        flex-direction: row;
-    }
-    
-    .navbar-text {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .destination-card {
-        height: 200px;
-    }
-    
-    .navbar-text {
-        display: none;
-    }
-}
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Body background */
-body {
+.team-info, .creator-info {
     background-color: #f8f9fa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-left: 4px solid #007bff;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.nav-link.active {
+    color: #007bff !important;
 }
