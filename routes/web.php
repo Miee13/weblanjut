@@ -1,18 +1,11 @@
 <?php
 
-use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
-
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
-
-Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
-Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blog.show');
+Route::get('/', [BlogController::class, 'home']);
+Route::get('/home', [BlogController::class, 'home']);
+Route::get('/about', [BlogController::class, 'about']);
 
 // Route::get('/', function () {
 //     return view('welcome');
