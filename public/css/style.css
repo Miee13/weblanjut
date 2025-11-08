@@ -1,4 +1,35 @@
+<<<<<<< Updated upstream
 .card-img-fixed {
+=======
+/* Background Gradient untuk Home */
+.home-background {
+    background-image: url('/images/bckground.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* atur tinggi sesuai kebutuhan */
+    width: 100%;
+}
+
+.hero-content h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Background untuk About */
+.about-hero {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 80px 0;
+    margin-bottom: 50px;
+}
+
+/* Styling untuk Destination Cards - Grid 3x3 */
+.destination-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+>>>>>>> Stashed changes
     height: 300px;
     object-fit: cover;
 }
