@@ -20,14 +20,25 @@
                     <h4 class="mb-0">Team Members</h4>
                 </div>
                 <div class="card-body">
-                    <div class="team-member p-3 mb-3 border rounded">
-                        <h5>24010600010 - VENI ADELIA </h5>
-                        <span class="badge bg-success">GENAP</span>
+
+                    <!-- Anggota 1 -->
+                    <div class="team-member p-3 mb-3 border rounded d-flex align-items-center">
+                        <img src="{{ asset('images/t1.jpg') }}" alt="Veni Adelia" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                        <div>
+                            <h5>24010600010 - VENI ADELIA</h5>
+                            <span class="badge bg-success">GENAP</span>
+                        </div>
                     </div>
-                    <div class="team-member p-3 border rounded">
-                        <h5>24010500001 - FAHMI HIDAYAT</h5>
-                        <span class="badge bg-info">GANJIL</span>
+
+                    <!-- Anggota 2 -->
+                    <div class="team-member p-3 border rounded d-flex align-items-center">
+                        <img src="{{ asset('images/t2.jpg') }}" alt="Fahmi Hidayat" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                        <div>
+                            <h5>24010500001 - FAHMI HIDAYAT</h5>
+                            <span class="badge bg-info">GANJIL</span>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
@@ -36,7 +47,7 @@
                 <div class="card-body text-center">
                     <p class="mb-0 fs-5">
                         <strong>Halaman ini dibuat oleh:</strong><br>
-                        2301010138 - L. M. ARANTA THIAR ELKANTA RIZKY ILLAHI
+                        24010600010 Veni Adelia
                     </p>
                 </div>
             </div>
@@ -48,3 +59,41 @@
     </div>
 </div>
 @endsection
+
+@push('styles')
+<style>
+.about-hero {
+    background-image: url('{{ asset("images/t1.jpg") }}');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.team-member h5 {
+    font-weight: 600;
+}
+
+.badge.bg-success {
+    background-color: #198754 !important;
+}
+
+.badge.bg-info {
+    background-color: #0dcaf0 !important;
+}
+
+.card.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.team-member img.rounded-circle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.d-flex.align-items-center {
+    gap: 15px;
+}
+</style>
+@endpush
