@@ -1,23 +1,87 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Travel Website')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    <style>
+        /* ============ NAVBAR ============ */
+        .navbar {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .navbar-nav .nav-link.active {
+            font-weight: bold;
+            color: #ffc107 !important;
+        }
+
+        /* ============ HERO SECTION ============ */
+        .hero-section {
+            body {
+            background-image: url('{{ asset("images/city.jpeg") }}'); /* ganti dengan nama gambar kamu */
+            background-size: cover;
+            }
+            background-position: center;
+            height: 90vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-top: 10px;
+        }
+
+        .hero-content .btn {
+            font-weight: bold;
+            padding: 10px 30px;
+            border-radius: 30px;
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Navbar -->
+    <!-- ============ NAVBAR ============ -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <!-- Home dan About di kiri -->
             <div class="navbar-nav">
                 <a class="nav-link {{ request()->is('home') ? 'active' : '' }}" href="/home">Home</a>
                 <a class="nav-link {{ request()->is('about') ? 'active' : '' }}" href="/about">About</a>
             </div>
             
-            <!-- NIM dan Nama di kanan -->
             <div class="navbar-nav ms-auto">
                 <span class="navbar-text">
                     24010500001 - Fahmi Hidayat (GANJIL)
@@ -26,9 +90,15 @@
         </div>
     </nav>
 
+    <!-- ============ KONTEN HALAMAN ============ -->
     <main>
         @yield('content')
     </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <p class="mb-0">© 2025 Travel Website | Fahmi Hidayat & Veni.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
