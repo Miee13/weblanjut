@@ -21,7 +21,6 @@
             <div class="position-absolute bottom-0 start-0 text-white p-3">
                 <p class="mb-0">Acropolis, Yunani</p>
             </div>
-        </div>
 
         <!-- Gambar tengah -->
         <div class="col-md-6 position-relative">
@@ -35,7 +34,6 @@
             <div class="position-absolute bottom-0 start-0 text-white p-3">
                 <p class="mb-0">Shibuya, Jepang</p>
             </div>
-        </div>
 
         <!-- Gambar kanan -->
         <div class="col-md-3 position-relative">
@@ -65,7 +63,6 @@
             <div class="position-absolute bottom-0 start-0 text-white p-3">
                 <p class="mb-0">Giza, Lotim</p>
             </div>
-        </div>
 
         <!-- Gambar tengah -->
         <div class="col-md-3 position-relative">
@@ -79,7 +76,6 @@
             <div class="position-absolute bottom-0 start-0 text-white p-3">
                 <p class="mb-0">Garuda Wisnu Kencana, Bali</p>
             </div>
-        </div>
 
         <!-- Gambar kanan -->
         <div class="col-md-3 position-relative">
@@ -109,7 +105,6 @@
             <div class="position-absolute bottom-0 start-0 text-white p-3">
                 <p class="mb-0">Jumeira, Abu Dhabi</p>
             </div>
-        </div>
 
         <!-- Gambar tengah -->
         <div class="col-md-6 position-relative">
@@ -123,7 +118,6 @@
             <div class="position-absolute bottom-0 start-0 text-white p-3">
                 <p class="mb-0">Newyork, US</p>
             </div>
-        </div>
 
         <!-- Gambar kanan -->
         <div class="col-md-3 position-relative">
