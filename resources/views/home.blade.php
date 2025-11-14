@@ -6,7 +6,7 @@
 
 
 <div class="container my-5">
-    <h2 class="text-center mb-4">Halaman ini dibuat oleh 24010500001 - FAHMI HIDAYAT</h2>
+    <h2 class="text-center text-white mb-4">Halaman ini dibuat oleh 24010500001 - FAHMI HIDAYAT</h2>
     <div class="row g-3">
         <!-- Baris Pertama -->
         <!-- Gambar kiri -->
