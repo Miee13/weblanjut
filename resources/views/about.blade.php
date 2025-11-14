@@ -3,97 +3,72 @@
 @section('title', 'About Us')
 
 @section('content')
-<div class="about-hero">
-    <div class="container">
-        <div class="text-center text-white">
-            <h1 class="display-4 fw-bold">About Our Team</h1>
-        </div>
+
+<div class="about-hero d-flex align-items-center justify-content-center" style="min-height: 10vh;">
+    <div class="container text-center text-white">
+        <h2 class="fw-bold mb-0">Halaman ini dibuat oleh: 24010600010 - VENI ADELIA (GENAP)</h2>
     </div>
 </div>
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
-            <!-- Info Anggota Tim -->
-            <div class="card shadow-lg border-0">
-                <div class="card-header bg-primary text-white">
-                    <h4 class="mb-0">Team Members</h4>
-                </div>
-                <div class="card-body">
+<div class="container my-5">
+    <div class="row align-item-center justify-content-center g-4">
 
-                    <!-- Anggota 1 -->
-                    <div class="team-member p-3 mb-3 border rounded d-flex align-items-center">
-                        <img src="{{ asset('images/t1.jpg') }}" alt="Veni Adelia" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;">
-                        <div>
-                            <h5>24010600010 - VENI ADELIA</h5>
-                            <span class="badge bg-success">GENAP</span>
-                        </div>
+        <!-- Kartu 1 -->
+        <div class="col-md-6">
+            <div class="member-card text-center p-4" style="
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(15px);
+                border-radius: 15px;
+                height: 450px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);">
+                <img src="{{ asset('images/t1.jpg') }}" alt="Veni Adelia" class="rounded-circle mb-3" width="150"
+                    height="150" style="object-fit: cover;">
+                <h4 class="fw-bold text-white">VENI ADELIA</h4>
+                <p class="text-white o[acity-75 mb-3">24010600010</p>
+
+                <div class="p-3 rounded" style="
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 8px;
+                    backdrop-filter: blur(5px);">
+                    <div class="text-start">
+                        <p class="mb-2" style="color: #ffffffff;">BIO</p>
+                        <p class="mb-2" style="color: #ffffffff;">Front-end designer & Laravel enthusiast 💻✨</p>
                     </div>
-
-                    <!-- Anggota 2 -->
-                    <div class="team-member p-3 border rounded d-flex align-items-center">
-                        <img src="{{ asset('images/t2.jpg') }}" alt="Fahmi Hidayat" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;">
-                        <div>
-                            <h5>24010500001 - FAHMI HIDAYAT</h5>
-                            <span class="badge bg-info">GANJIL</span>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-
-            <!-- Info Pembuat -->
-            <div class="card mt-4 border-0 bg-light">
-                <div class="card-body text-center">
-                    <p class="mb-0 fs-5">
-                        <strong>Halaman ini dibuat oleh:</strong><br>
-                        24010600010 Veni Adelia
-                    </p>
-                </div>
-            </div>
-
-            <div class="text-center mt-4">
-                <a href="/home" class="btn btn-primary btn-lg">← Back to Home</a>
             </div>
         </div>
+
+        <!-- Kartu 2 -->
+        <div class="col-md-6">
+            <div class="member-card text-center p-4" style="
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(15px);
+                border-radius: 15px;
+                height: 450px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);">
+                <img src="{{ asset('images/t2.jpg') }}" alt="Fahmi Hidayat" class="rounded-circle mb-3" width="150"
+                    height="150" style="object-fit: cover;">
+                <h4 class="fw-bold text-white">FAHMI HIDAYAT</h4>
+                <p class="text-white opacity-75 mb-3">24010500001</p>
+
+
+                <div class="p-3 rounded" style="
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 8px;
+                    backdrop-filter: blur(5px);">
+                    <div class="text-start">
+                        <p class="mb-2" style="color: #ffffffff;">BIO</p>
+                        <p class="mb-2" style="color: #ffffffff;">Back-end developer & database enjoyer ⚙️</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
+
 @endsection
-
-@push('styles')
-<style>
-.about-hero {
-    background-image: url('{{ asset("images/t1.jpg") }}');
-    background-size: cover;
-    background-position: center;
-    padding: 4rem 0;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-}
-
-.team-member h5 {
-    font-weight: 600;
-}
-
-.badge.bg-success {
-    background-color: #198754 !important;
-}
-
-.badge.bg-info {
-    background-color: #0dcaf0 !important;
-}
-
-.card.bg-light {
-    background-color: #f8f9fa !important;
-}
-
-.team-member img.rounded-circle {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.d-flex.align-items-center {
-    gap: 15px;
-}
-</style>
-@endpush

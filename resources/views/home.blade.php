@@ -3,110 +3,137 @@
 @section('title', 'Home')
 
 @section('content')
-<div class="container mt-4">
 
-    <!-- Info Pembuat seperti di foto -->
-    <div class="creator-info mb-4 p-3 bg-light rounded d-flex justify-content-center align-items-center" style="height:100px;">
-        <p class="mb-0">Halaman ini dibuat oleh 24010500001 - FAHMI HIDAYAT</p>
-    </div>
 
-    <!-- Grid Destinasi sederhana seperti di foto -->
-    <div class="destinations-grid">
-        <div class="row">
-            <!-- Baris 1 -->
-            <div class="col-md-4 mb-3">
-                <div class="destination-item p-3 border rounded text-center">
-                    <div class="destination-image mb-2">
-                        <img src="{{ asset('images/acropolis.jpg') }}" alt="Acropolis, Yunani" class="img-fluid rounded">
-                    </div>
-                    <h6 class="mb-1">Acropolis</h6>
-                    <p class="text-muted small mb-0">Yunani</p>
-                </div>
+<div class="container my-5">
+    <h2 class="text-center text-white mb-4">Halaman ini dibuat oleh 24010500001 - FAHMI HIDAYAT</h2>
+    <div class="row g-3">
+        <!-- Baris Pertama -->
+        <!-- Gambar kiri -->
+        <div class="col-md-3 position-relative">
+            <img src="{{ asset('images/acropolis.jpg') }}" class="img-fluid w-100"
+                style="border-radius: 7px; height: 200px; object-fit: cover;" alt="Acropolis">
+                <div class="position-absolute bottom-0 start-50 translate-middle-x"
+             style="border-radius: 7px; width:95.5%; height: 110px; background: linear-gradient(to top, 
+                    rgba(0,0,0,0.8) 0%, 
+                    rgba(0,0,0,0.4) 50%, 
+                    transparent 100%);"></div>
+            <div class="position-absolute bottom-0 start-0 text-white p-3">
+                <p class="mb-0">Acropolis, Yunani</p>
             </div>
 
-            <div class="col-md-4 mb-3">
-                <div class="destination-item p-3 border rounded text-center">
-                    <div class="destination-image mb-2">
-                        <img src="{{ asset('images/shibuya.jpg') }}" alt="Shibuya, Jepang" class="img-fluid rounded">
-                    </div>
-                    <h6 class="mb-1">Shibuya</h6>
-                    <p class="text-muted small mb-0">Jepang</p>
-                </div>
+        <!-- Gambar tengah -->
+        <div class="col-md-6 position-relative">
+            <img src="{{ asset('images/shibuya.jpg') }}" class="img-fluid w-100"
+                style="border-radius: 7px; height: 200px; object-fit: cover;" alt="Shibuya">
+            <div class="position-absolute bottom-0 start-50 translate-middle-x"
+             style="border-radius: 7px; width:97.5%; height: 110px; background: linear-gradient(to top, 
+                    rgba(0,0,0,0.8) 0%, 
+                    rgba(0,0,0,0.4) 50%, 
+                    transparent 100%);"></div>
+            <div class="position-absolute bottom-0 start-0 text-white p-3">
+                <p class="mb-0">Shibuya, Jepang</p>
             </div>
 
-            <div class="col-md-4 mb-3">
-                <div class="destination-item p-3 border rounded text-center">
-                    <div class="destination-image mb-2">
-                        <img src="{{ asset('images/cappadocia.webp') }}" alt="Cappadocia, Turki" class="img-fluid rounded">
-                    </div>
-                    <h6 class="mb-1">Cappadocia</h6>
-                    <p class="text-muted small mb-0">Turki</p>
-                </div>
-            </div>
-
-            <!-- Baris 2 -->
-            <div class="col-md-4 mb-3">
-                <div class="destination-item p-3 border rounded text-center">
-                    <div class="destination-image mb-2">
-                        <img src="{{ asset('images/giza.webp') }}" alt="Giza, Mesir" class="img-fluid rounded">
-                    </div>
-                    <h6 class="mb-1">Piramida Giza</h6>
-                    <p class="text-muted small mb-0">Mesir</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-3">
-                <div class="destination-item p-3 border rounded text-center">
-                    <div class="destination-image mb-2">
-                        <img src="{{ asset('images/garuda.jpg') }}" alt="Garuda Wisnu Kencana, Bali" class="img-fluid rounded">
-                    </div>
-                    <h6 class="mb-1">Garuda Wisnu Kencana</h6>
-                    <p class="text-muted small mb-0">Bali, Indonesia</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-3">
-                <div class="destination-item p-3 border rounded text-center">
-                    <div class="destination-image mb-2">
-                        <img src="{{ asset('images/huayana.jpg') }}" alt="Machu Picchu, Peru" class="img-fluid rounded">
-                    </div>
-                    <h6 class="mb-1">Machu Picchu</h6>
-                    <p class="text-muted small mb-0">Peru</p>
-                </div>
-            </div>
-
-            <!-- Baris 3 -->
-            <div class="col-md-4 mb-3">
-                <div class="destination-item p-3 border rounded text-center">
-                    <div class="destination-image mb-2">
-                        <img src="{{ asset('images/jumeirah.jpg') }}" alt="Burj Khalifa, Dubai" class="img-fluid rounded">
-                    </div>
-                    <h6 class="mb-1">Burj Khalifa</h6>
-                    <p class="text-muted small mb-0">Dubai, UAE</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-3">
-                <div class="destination-item p-3 border rounded text-center">
-                    <div class="destination-image mb-2">
-                        <img src="{{ asset('images/newyork.jpg') }}" alt="New York, US" class="img-fluid rounded">
-                    </div>
-                    <h6 class="mb-1">New York</h6>
-                    <p class="text-muted small mb-0">Amerika Serikat</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-3">
-                <div class="destination-item p-3 border rounded text-center">
-                    <div class="destination-image mb-2">
-                        <img src="{{ asset('images/niagara.jpg') }}" alt="Niagara, Kanada" class="img-fluid rounded">
-                    </div>
-                    <h6 class="mb-1">Air Terjun Niagara</h6>
-                    <p class="text-muted small mb-0">Kanada</p>
-                    <small class="text-muted">(karangan anak harmada)</small>
-                </div>
+        <!-- Gambar kanan -->
+        <div class="col-md-3 position-relative">
+            <img src="{{ asset('images/cappadocia.webp') }}" class="img-fluid w-100"
+                style="border-radius: 7px; height: 200px; object-fit: cover;" alt="Cappadocia">
+                <div class="position-absolute bottom-0 start-50 translate-middle-x"
+             style="border-radius: 7px; width:95.5%; height: 110px; background: linear-gradient(to top, 
+                    rgba(0,0,0,0.8) 0%, 
+                    rgba(0,0,0,0.4) 50%, 
+                    transparent 100%);"></div>
+            <div class="position-absolute bottom-0 start-0 text-white p-3">
+                <p class="mb-0">Cappadocia, mudi bale</p>
             </div>
         </div>
+        <!-- Akhir Baris Pertama -->
+
+        <!-- Baris Kedua -->
+        <!-- Gambar kiri -->
+        <div class="col-md-6 position-relative">
+            <img src="{{ asset('images/giza.webp') }}" class="img-fluid w-100"
+                style="border-radius: 7px; height: 200px; object-fit: cover;" alt="Giza">
+            <div class="position-absolute bottom-0 start-50 translate-middle-x"
+             style="border-radius: 7px; width:97.5%; height: 110px; background: linear-gradient(to top, 
+                    rgba(0,0,0,0.8) 0%, 
+                    rgba(0,0,0,0.4) 50%, 
+                    transparent 100%);"></div>
+            <div class="position-absolute bottom-0 start-0 text-white p-3">
+                <p class="mb-0">Giza, Lotim</p>
+            </div>
+
+        <!-- Gambar tengah -->
+        <div class="col-md-3 position-relative">
+            <img src="{{ asset('images/garuda.jpg') }}" class="img-fluid w-100"
+                style="border-radius: 7px; height: 200px; object-fit: cover;" alt="Garuda Wisnu Kencana">
+            <div class="position-absolute bottom-0 start-50 translate-middle-x"
+             style="border-radius: 7px; width:95.5%; height: 110px; background: linear-gradient(to top, 
+                    rgba(0,0,0,0.8) 0%, 
+                    rgba(0,0,0,0.4) 50%, 
+                    transparent 100%);"></div>
+            <div class="position-absolute bottom-0 start-0 text-white p-3">
+                <p class="mb-0">Garuda Wisnu Kencana, Bali</p>
+            </div>
+
+        <!-- Gambar kanan -->
+        <div class="col-md-3 position-relative">
+            <img src="{{ asset('images/huayana.jpg') }}" class="img-fluid w-100"
+                style="border-radius: 7px; height: 200px; object-fit: cover;" alt="Huayana">
+            <div class="position-absolute bottom-0 start-50 translate-middle-x"
+             style="border-radius: 7px; width:95.5%; height: 110px; background: linear-gradient(to top, 
+                    rgba(0,0,0,0.8) 0%, 
+                    rgba(0,0,0,0.4) 50%, 
+                    transparent 100%);"></div>
+            <div class="position-absolute bottom-0 start-0 text-white p-3">
+                <p class="mb-0">Huayana, Peru</p>
+            </div>
+        </div>
+        <!-- Akhir Baris Kedua -->
+
+        <!-- Baris Ketiga -->
+        <!-- Gambar kiri -->
+        <div class="col-md-3 position-relative">
+            <img src="{{ asset('images/jumeirah.jpg') }}" class="img-fluid w-100"
+                style="border-radius: 7px; height: 200px; object-fit: cover;" alt="Jumeira">
+            <div class="position-absolute bottom-0 start-50 translate-middle-x"
+             style="border-radius: 7px; width:95.5%; height: 110px; background: linear-gradient(to top, 
+                    rgba(0,0,0,0.8) 0%, 
+                    rgba(0,0,0,0.4) 50%, 
+                    transparent 100%);"></div>
+            <div class="position-absolute bottom-0 start-0 text-white p-3">
+                <p class="mb-0">Jumeira, Abu Dhabi</p>
+            </div>
+
+        <!-- Gambar tengah -->
+        <div class="col-md-6 position-relative">
+            <img src="{{ asset('images/newyork.jpg') }}" class="img-fluid w-100"
+                style="border-radius: 7px; height: 200px; object-fit: cover;" alt="Newyork">
+                <div class="position-absolute bottom-0 start-50 translate-middle-x"
+             style="border-radius: 7px; width:97.5%; height: 110px; background: linear-gradient(to top, 
+                    rgba(0,0,0,0.8) 0%, 
+                    rgba(0,0,0,0.4) 50%, 
+                    transparent 100%);"></div>
+            <div class="position-absolute bottom-0 start-0 text-white p-3">
+                <p class="mb-0">Newyork, US</p>
+            </div>
+
+        <!-- Gambar kanan -->
+        <div class="col-md-3 position-relative">
+            <img src="{{ asset('images/niagara.jpg') }}" class="img-fluid w-100"
+                style="border-radius: 7px; height: 200px; object-fit: cover;" alt="Niagara">
+            <div class="position-absolute bottom-0 start-50 translate-middle-x"
+             style="border-radius: 7px; width:95.5%; height: 110px; background: linear-gradient(to top, 
+                    rgba(0,0,0,0.8) 0%, 
+                    rgba(0,0,0,0.4) 50%, 
+                    transparent 100%);"></div>
+            <div class="position-absolute bottom-0 start-0 text-white p-3">
+                <p class="mb-0">Niagara, Kanada</p>
+            </div>
+        </div>
+        <!-- Akhir Baris Ketiga -->
     </div>
 </div>
+
 @endsection
