@@ -29,7 +29,7 @@
     <div class="container-fluid">
         
         <div class="navbar-nav">
-            <a class="nav-link {{ request()->is('home') ? 'active' : '' }}" href="/home">Home</a>
+            <a class="nav-link {{ request()->is('home') ? 'active' : '' }}" href="/">Home</a>
             <a class="nav-link {{ request()->is('about') ? 'active' : '' }}" href="/about">About</a>
         </div>
         
