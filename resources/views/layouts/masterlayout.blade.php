@@ -10,7 +10,8 @@
     <style>
     /* ============ NAVBAR ============ */
     .navbar {
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(15px);
     }
 
     body {
